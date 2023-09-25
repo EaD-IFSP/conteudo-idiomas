@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>e-Tec Idiomas sem Fronteiras</title>
+  <link type="text/css" rel="stylesheet" media="all" href="./dist/styles/h5p.css" />
+  <meta charset="utf-8" />
+  <script type="text/javascript" src="./dist/main.bundle.js"></script>
+</head>
+
+<body>
+  <div id="h5p-container"></div>
+  <div id="h5p-footer">
+    <p>Créditos:</p>
+    <p>O programa e-Tec Idiomas possibilita a capacitação de estudantes e servidores em uma língua estrangeira, com o desenvolvimento das competências previstas no Quadro Europeu Comum de Referências para Línguas Estrangeiras. Os conteúdos são distribuídos em módulos que correspondem aos níveis A1, A2 e B1. Ao final do curso, o aluno estará apto a realizar testes de proficiência e qualificado para participar de programas de mobilidade internacional. Além de ampliar seus conhecimentos sobre outras culturas, o estudante também apresentará o diferencial do idioma em seu ambiente acadêmico e profissional. O e-Tec Idiomas é um programa de ensino de línguas a distância concebido e produzido pela Rede Federal de Educação, Ciência e Tecnologia, via Setec/MEC e Conif.</p>
+    <p>Adaptado para o H5P pelo IFSP.</p>
+    <p>Licença de uso: CC BY-NC-SA</p>
+  </div>
+  <script type="text/javascript">
+    const {
+      H5P
+    } = H5PStandalone;
+    new H5P(document.getElementById('h5p-container'), {
+      h5pJsonPath: 'h5p-folder',
+      id: 'h5p-folder',
+      frameJs: './dist/frame.bundle.js',
+      frameCss: './dist/styles/h5p.css',
+      frame: true,
+      copyright: true,
+      export: true,
+      icon: true,
+      downloadUrl: './h5p/h5p-folder.h5p',
+      embed: true,
+      embedCode:'<iframe width=":w" height=":h" src="http://cdn.ead.ifsp.edu.br/conteudo/idiomas/h5p-folder.html" frameBorder="0" scrolling="no" styles="width:100%"></iframe>'
+    });
+  </script>
+</body>
+
+</html>
