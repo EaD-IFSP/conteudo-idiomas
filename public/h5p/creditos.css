@@ -1,0 +1,12 @@
+#creditos {
+    font-size: 13px;
+    color: #696969;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+
+#btn_creditos {
+    color: #515151;
+    cursor: pointer;
+    border: none;
+}
