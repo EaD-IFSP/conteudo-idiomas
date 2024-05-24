@@ -5,29 +5,30 @@
   <meta charset="utf-8" />
   <title>e-Tec Idiomas sem Fronteiras</title>
   <link type="text/css" rel="stylesheet" media="all" href="./dist/styles/h5p.css" />
-  <link type="text/css" rel="stylesheet" href="creditos.css" />
   <script type="text/javascript" src="./dist/main.bundle.js"></script>
-  <script type="text/javascript" src="creditos.js"></script>
 </head>
 
 <body>
   <div id="h5p-container"></div>
   <div id="h5p-footer">
 
-    <button id="btn_creditos" onclick="toggle('creditos')">Créditos</button>
+    <button id="btn_creditos" onclick="toggle('creditos')"
+      style="color: #515151; cursor: pointer; border: none;">Créditos</button>
 
-    <div id="creditos">
+    <div id="creditos"
+      style="font-size: 13px; color: #696969; font-family: Arial, Helvetica, sans-serif; display: none;">
       <p>O programa e-Tec Idiomas possibilita a capacitação de estudantes e servidores em uma língua estrangeira, com o
         desenvolvimento das competências previstas no Quadro Europeu Comum de Referências para Línguas Estrangeiras. Os
         conteúdos são distribuídos em módulos que correspondem aos níveis A1, A2 e B1. Ao final do curso, o aluno estará
         apto a realizar testes de proficiência e qualificado para participar de programas de mobilidade internacional.
         Além de ampliar seus conhecimentos sobre outras culturas, o estudante também apresentará o diferencial do idioma
-        em seu ambiente acadêmico e profissional. O e-Tec Idiomas é um programa de ensino de línguas a distância concebido
-        e produzido pela Rede Federal de Educação, Ciência e Tecnologia, via Setec/MEC e Conif.</p>
+        em seu ambiente acadêmico e profissional. O e-Tec Idiomas é um programa de ensino de línguas a distância
+        concebido e produzido pela Rede Federal de Educação, Ciência e Tecnologia, via Setec/MEC e Conif.</p>
       <p>Adaptado para o H5P pelo IFSP.</p>
       <p>Licença de uso: CC BY-NC-SA</p>
     </div>
   </div>
+
   <script type="text/javascript">
     const {
       H5P
@@ -45,6 +46,19 @@
       embed: true,
       embedCode: '<iframe width=":w" height=":h" src="http://cdn.ead.ifsp.edu.br/conteudo/idiomas/h5p-folder.html" frameBorder="0" scrolling="no" styles="width:100%"></iframe>'
     });
+
+    function toggle(el) {
+
+      var display = document.getElementById(el).style.display;
+
+      if (display == "block") {
+        document.getElementById(el).style.display = 'none';
+      }
+      else {
+        document.getElementById(el).style.display = 'block';
+      }
+    }
+
   </script>
 </body>
 
